@@ -66,13 +66,24 @@
 
     <Button
         android:id="@+id/button_reg"
-        android:layout_width="148dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
         android:text="Регистрация"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_pass_reg" />
+
+    <TextView
+        android:id="@+id/textToAuth_reg"
+        android:layout_width="81dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:text="Вход"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_reg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
