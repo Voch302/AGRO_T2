@@ -14,5 +14,4 @@ class Chat_Contoller : AppCompatActivity() {
 
 
         }
-    }
 }
