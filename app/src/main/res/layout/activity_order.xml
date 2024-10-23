@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainOrder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderActivity">
+
+    <ImageView
+        android:id="@+id/imageViewAgro"
+        android:layout_width="96dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="627dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewAgro"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Агро-Белогорье"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAgro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textOrderStatus"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="104dp"
+        android:text="Статус заказа : Ожидание"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAddress"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="38dp"
+        android:text="Адрес : Колинина А3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOrderStatus" />
+
+    <TextView
+        android:id="@+id/textTimeofsending"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="38dp"
+        android:text="Время Отправки :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddress" />
+
+    <TextView
+        android:id="@+id/textNumberofBins"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="100dp"
+        android:text="Всего Бункеров 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="2dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="205dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/viewBunker1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="328dp"
+        android:background="#8C4747"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/viewBunker2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="45dp"
+        android:background="#8C4747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewBunker1" />
+
+    <View
+        android:id="@+id/viewBunker3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="45dp"
+        android:background="#8B4747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewBunker2" />
+
+    <TextView
+        android:id="@+id/textBunker1"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="348dp"
+        android:text="200/120"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toEndOf="@+id/viewBunker1" />
+
+    <TextView
+        android:id="@+id/textBunker2"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="88dp"
+        android:text="310/200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toEndOf="@+id/viewBunker2"
+        app:layout_constraintTop_toBottomOf="@+id/textBunker1" />
+
+    <TextView
+        android:id="@+id/textBunker3"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="92dp"
+        android:text="500/100"
+        app:layout_constraintStart_toEndOf="@+id/viewBunker3"
+        app:layout_constraintTop_toBottomOf="@+id/textBunker2" />
+
+    <TextView
+        android:id="@+id/textArrivalTime"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="36dp"
+        android:text="Время прибытие :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTimeofsending" />
+
+    <TextView
+        android:id="@+id/textNameBunker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <TextView
+        android:id="@+id/textNameBunker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <TextView
+        android:id="@+id/textNameBunker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="543dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
