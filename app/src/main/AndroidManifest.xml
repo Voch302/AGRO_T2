@@ -23,7 +23,7 @@
             android:name=".MainRating"
             android:exported="false" />
         <activity
-            android:name=".settings"
+            android:name=".Chat_Contoller"
             android:exported="false" />
         <activity
             android:name=".orderActivity"
