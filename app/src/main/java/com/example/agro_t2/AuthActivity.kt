@@ -17,30 +17,32 @@ class AuthActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_auth)
 
-        val emailAuth: EditText = findViewById(R.id.user_email_auth)
+        val loginAuth: EditText = findViewById(R.id.user_login_auth)
         val passAuth: EditText = findViewById(R.id.user_pass_auth)
         val buttonAuth: Button = findViewById(R.id.button)
         val textToReg: TextView = findViewById(R.id.textToReg_auth)
 
         buttonAuth.setOnClickListener {
-            val email = emailAuth.text.toString()
+            val login = loginAuth.text.toString()
             val pass = passAuth.text.toString()
 
-            if (email == "" || pass == "")
+            if (login == "" || pass == "")
                 Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
-            else
-                Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
+            else {
+                if ((login != "") && (pass != "")) {
+                    Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
+                    val intentLogIn = Intent(this, orderActivity::class.java)
+                    startActivity(intentLogIn)
+                }
+            }
+
+
+            textToReg.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+
+
         }
-
-
-        textToReg.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-
-
-
-
     }
 }
-
