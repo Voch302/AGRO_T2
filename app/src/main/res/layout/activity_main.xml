@@ -9,9 +9,11 @@
 
     <TextView
         android:id="@+id/TextReg_main"
-        android:layout_width="99dp"
-        android:layout_height="51dp"
+        android:layout_width="210dp"
+        android:layout_height="61dp"
+        android:gravity="center_horizontal"
         android:text="Регистрация"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
@@ -77,10 +79,12 @@
 
     <TextView
         android:id="@+id/textToAuth_reg"
-        android:layout_width="81dp"
-        android:layout_height="52dp"
+        android:layout_width="218dp"
+        android:layout_height="53dp"
         android:layout_marginTop="56dp"
-        android:text="Вход"
+        android:gravity="center_horizontal"
+        android:text="Нету аккаунта? Создайте его!"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

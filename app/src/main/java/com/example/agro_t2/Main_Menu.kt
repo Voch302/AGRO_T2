@@ -18,7 +18,7 @@ class Main_Menu : AppCompatActivity() {
 
         val user = User()
         val emailMainMenu: TextView = findViewById(R.id.email_main_menu)
-        emailMainMenu.text = user.login
+        emailMainMenu.text = user.UserLogin
         val SNP: TextView = findViewById(R.id.SNP_main_menu)
 
         val buttonToOrder: TextView = findViewById(R.id.ToOrder_main_menu)
@@ -35,21 +35,27 @@ class Main_Menu : AppCompatActivity() {
             val intent = Intent(this, settings::class.java)
             startActivity(intent)
         }
-        buttonToOrderHistory.setOnClickListener {
-            val intent = Intent(this, orderActivity::class.java)
+
+
+        buttonToChatController.setOnClickListener {
+            val intent = Intent(this, Chat_Contoller::class.java)
             startActivity(intent)
         }
 /*
-        buttonToChatController.setOnClickListener {
-            val intent = Intent(this, ChatController::class.java)
-            startActivity(intent)
-        }
-
         buttonToRating.setOnClickListener {
             val intent = Intent(this, Rating::class.java)
             startActivity(intent)
         }
+
+        buttonToOrderHistory.setOnClickListener {
+            val intent = Intent(this, orderActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
 */
+
 
 
     }
