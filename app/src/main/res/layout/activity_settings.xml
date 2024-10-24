@@ -29,35 +29,45 @@
 
     <EditText
         android:id="@+id/editTextNewPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
         android:layout_marginStart="53dp"
         android:layout_marginTop="18dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="6dp"
         android:ems="10"
         android:inputType="text"
         android:text="Пороль"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textNewPassword" />
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="7dp"
+        android:layout_marginEnd="146dp"
         android:ems="10"
         android:inputType="text"
         android:text="Повторите пороль"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNewPassword" />
 
     <Switch
         android:id="@+id/switchNotification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
         android:layout_marginStart="58dp"
         android:layout_marginTop="28dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="138dp"
         android:text="выкл/вкл"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExitAccount"
+        app:layout_constraintEnd_toStartOf="@+id/textNotification"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
@@ -100,6 +110,16 @@
         android:text="Изменить пороль"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonNewProfile" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="X"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
