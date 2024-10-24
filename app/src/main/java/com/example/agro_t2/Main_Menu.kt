@@ -35,15 +35,16 @@ class Main_Menu : AppCompatActivity() {
             val intent = Intent(this, settings::class.java)
             startActivity(intent)
         }
+        buttonToOrderHistory.setOnClickListener {
+            val intent = Intent(this, orderActivity::class.java)
+            startActivity(intent)
+        }
 /*
         buttonToChatController.setOnClickListener {
             val intent = Intent(this, ChatController::class.java)
             startActivity(intent)
         }
-        buttonToOrderHistory.setOnClickListener {
-            val intent = Intent(this, OrderHistory::class.java)
-            startActivity(intent)
-        }
+
         buttonToRating.setOnClickListener {
             val intent = Intent(this, Rating::class.java)
             startActivity(intent)
