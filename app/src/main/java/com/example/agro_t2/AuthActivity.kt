@@ -31,7 +31,7 @@ class AuthActivity : AppCompatActivity() {
             else {
                 if ((login != "") && (pass != "")) {
                     Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
-                    val intentLogIn = Intent(this, Main_Menu::class.java)
+                    val intentLogIn = Intent(this, orderActivity::class.java)
                     startActivity(intentLogIn)
                 }
             }

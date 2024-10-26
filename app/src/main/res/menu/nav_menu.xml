@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Category 1">
+        <menu>
+            <item android:title = "Заказ" android:id="@+id/orderNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:title = "История заказов" android:id="@+id/orderHistoryNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:title = "Рейтинг" android:id="@+id/ratingNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:title = "Связаться с контролером" android:id="@+id/controllerNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:title = "Настройки" android:id="@+id/settingsNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
+
+
+        </menu>
+
+
+    </item>
+</menu>

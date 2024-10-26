@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             else {
                 val user = User(login, email, pass)
                 Toast.makeText(
-                    this, "Пользователь $login успешно зарегестрирован",
+                    this, "Пользователь $login успешно зарегистрирован",
                     Toast.LENGTH_LONG).show()
                 }
 
