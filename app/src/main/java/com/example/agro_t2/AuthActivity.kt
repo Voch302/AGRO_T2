@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -21,28 +22,73 @@ class AuthActivity : AppCompatActivity() {
         val passAuth: EditText = findViewById(R.id.user_pass_auth)
         val buttonAuth: Button = findViewById(R.id.button)
         val textToReg: TextView = findViewById(R.id.textToReg_auth)
+        val switch: Switch = findViewById(R.id.switchAuth)
+        val Text1: TextView = findViewById(R.id.TextAuth_main)
+
+        switch.setOnClickListener {
+            if (switch.isChecked) {
+                Toast.makeText(this, "Switcher is Work!!", Toast.LENGTH_LONG).show()
+                Text1.text = ("Вход \\n Контроллер").toString()
+            } else {
+                Toast.makeText(this, "Switcher is OFF!!", Toast.LENGTH_LONG).show()
+                Text1.text = ("Вход \\n Водитель").toString()
+
+            }
+        }
+
 
         buttonAuth.setOnClickListener {
             val login = loginAuth.text.toString()
             val pass = passAuth.text.toString()
 
-            if (login == "" || pass == "")
-                Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
-            else {
-                if ((login != "") && (pass != "")) {
-                    Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
-                    val intentLogIn = Intent(this, orderActivity::class.java)
-                    startActivity(intentLogIn)
+
+            if (switch.isChecked) {
+                Toast.makeText(this, "Выбран режим входа для водителя", Toast.LENGTH_SHORT).show()
+                Text1.text = ("Вход \n Водитель").toString()
+
+
+                if (login == "" || pass == "")
+                    Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
+                else {
+                    if ((login == "con") && (pass == "con")) {
+                        Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
+                        val intentLogIn = Intent(this, orderActivity::class.java)
+                        startActivity(intentLogIn)
+                    }
                 }
+
+            } else {
+                Toast.makeText(this, "Выбран режим входа для контроллера", Toast.LENGTH_SHORT).show()
+                Text1.text = ("Вход \n Контроллер").toString()
+                if (login == "" || pass == "")
+                    Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
+
+                else {
+                    if ((login == "dri") && (pass == "dri")) {
+                        Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
+                        val intentLogIn = Intent(this, DriveOorderController::class.java)
+                        startActivity(intentLogIn)
+                    }
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+                textToReg.setOnClickListener {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+
+
             }
-
-
-            textToReg.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-            }
-
-
         }
     }
 }
