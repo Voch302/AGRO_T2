@@ -28,10 +28,10 @@ class AuthActivity : AppCompatActivity() {
         switch.setOnClickListener {
             if (switch.isChecked) {
                 Toast.makeText(this, "Switcher is Work!!", Toast.LENGTH_LONG).show()
-                Text1.text = ("Вход \\n Контроллер").toString()
+                Text1.text = ("Вход \n Водитель").toString()
             } else {
                 Toast.makeText(this, "Switcher is OFF!!", Toast.LENGTH_LONG).show()
-                Text1.text = ("Вход \\n Водитель").toString()
+                Text1.text = ("Вход \n Контроллер").toString()
 
             }
         }
@@ -44,13 +44,13 @@ class AuthActivity : AppCompatActivity() {
 
             if (switch.isChecked) {
                 Toast.makeText(this, "Выбран режим входа для водителя", Toast.LENGTH_SHORT).show()
-                Text1.text = ("Вход \n Водитель").toString()
+
 
 
                 if (login == "" || pass == "")
                     Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
                 else {
-                    if ((login == "con") && (pass == "con")) {
+                    if ((login == "dri") && (pass == "dri")) {
                         Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
                         val intentLogIn = Intent(this, orderActivity::class.java)
                         startActivity(intentLogIn)
@@ -59,36 +59,27 @@ class AuthActivity : AppCompatActivity() {
 
             } else {
                 Toast.makeText(this, "Выбран режим входа для контроллера", Toast.LENGTH_SHORT).show()
-                Text1.text = ("Вход \n Контроллер").toString()
+
                 if (login == "" || pass == "")
                     Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
 
                 else {
-                    if ((login == "dri") && (pass == "dri")) {
+                    if ((login == "con") && (pass == "con")) {
                         Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
                         val intentLogIn = Intent(this, DriveOorderController::class.java)
                         startActivity(intentLogIn)
                     }
                 }
 
-
-
-
-
-
-
-
-
-
-
-
-                textToReg.setOnClickListener {
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
-                }
+                
 
 
             }
+            textToReg.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+
         }
     }
 }

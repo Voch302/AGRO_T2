@@ -5,18 +5,18 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.agro_t2.databinding.ActivityReportControllerBinding
+import com.example.agro_t2.databinding.ActivityStatisticsControllerBinding
 
 
-class ReportController : AppCompatActivity() {
-    lateinit var binding: ActivityReportControllerBinding
+class StatisticsController : AppCompatActivity() {
+    lateinit var binding: ActivityStatisticsControllerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityReportControllerBinding.inflate(layoutInflater)
+        binding = ActivityStatisticsControllerBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
+
 
         binding.nav.setNavigationItemSelectedListener {
             when (it.itemId) {
@@ -57,7 +57,6 @@ class ReportController : AppCompatActivity() {
             }
             true
         }
-
 
 
 

@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Category 1">
+        <menu>
+            <item android:title = "Водитель заказа" android:id="@+id/orderNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:title = "Связь с водителем" android:id="@+id/orderHistoryNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:title = "Рейтинг водителей" android:id="@+id/ratingNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:title = "Статистика" android:id="@+id/controllerNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:title = "Отчет" android:id ="@+id/reportNavMenuController" android:icon = "@drawable/ic_launcher_foreground"/>
+            <item android:title = "Настройки" android:id="@+id/settingsNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
+        </menu>
 
+
+    </item>
 </menu>

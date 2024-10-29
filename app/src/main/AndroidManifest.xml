@@ -47,6 +47,24 @@
             android:name=".OrderHistory"
             android:exported="true" />
         <activity
+            android:name=".ChatControllerController"
+            android:exported="true" />
+        <activity
+            android:name=".StatisticsController"
+            android:exported="true" />
+        <activity
+            android:name=".RatingController"
+            android:exported="true" />
+        <activity
+            android:name=".ReportController"
+            android:exported="true" />
+        <activity
+            android:name=".SettingsController"
+            android:exported="true" />
+
+
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

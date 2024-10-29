@@ -6,40 +6,39 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.agro_t2.databinding.ActivityReportControllerBinding
+import com.example.agro_t2.databinding.ActivityChatControllerControllerBinding
 
-
-class ReportController : AppCompatActivity() {
-    lateinit var binding: ActivityReportControllerBinding
+class ChatControllerController : AppCompatActivity() {
+    lateinit var binding: ActivityChatControllerControllerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityReportControllerBinding.inflate(layoutInflater)
+        binding = ActivityChatControllerControllerBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
         binding.nav.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.orderNavMenuController -> {
-                    val intent = Intent(this, orderActivity::class.java)
+                    val intent = Intent(this, DriveOorderController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
                 R.id.orderHistoryNavMenuController -> {
-                    val intent = Intent(this, OrderHistory::class.java)
+                    val intent = Intent(this, ChatControllerController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
                 R.id.ratingNavMenuController -> {
-                    val intent = Intent(this, MainRating::class.java)
+                    val intent = Intent(this, RatingController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
                 R.id.controllerNavMenuController -> {
-                    val intent = Intent(this, ChatControllerController::class.java)
+                    val intent = Intent(this, StatisticsController::class.java)
                     startActivity(intent)
                 }
             }
@@ -57,9 +56,6 @@ class ReportController : AppCompatActivity() {
             }
             true
         }
-
-
-
 
 
 
