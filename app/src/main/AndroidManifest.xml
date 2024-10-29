@@ -23,9 +23,6 @@
             android:name=".orderController"
             android:exported="false" />
         <activity
-            android:name=".controller.OrderController"
-            android:exported="false" />
-        <activity
             android:name=".MainPage"
             android:exported="false" />
         <activity
