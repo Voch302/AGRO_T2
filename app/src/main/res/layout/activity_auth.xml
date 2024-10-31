@@ -100,7 +100,7 @@
         android:id="@+id/textView23"
         android:layout_width="182dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="88dp"
         android:text="Driver tracker"
         android:textAlignment="center"
         android:textColor="#C5252C"
