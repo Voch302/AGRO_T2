@@ -7,19 +7,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="2390dp"
+        android:layout_height="809dp"
+        android:backgroundTintMode="src_in"
+        app:layout_constraintEnd_toStartOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imaggg1" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="241dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="84dp"
+        android:background="#C5454545"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/TextReg_main"
         android:layout_width="210dp"
         android:layout_height="61dp"
         android:gravity="center_horizontal"
         android:text="Регистрация"
-        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <EditText
         android:id="@+id/user_email_reg"
@@ -28,9 +50,13 @@
         android:layout_marginStart="93dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="108dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="Email"
         android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,11 +67,15 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginStart="93dp"
-        android:layout_marginTop="36dp"
         android:layout_marginEnd="109dp"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_in"
         android:ems="10"
         android:hint="Login"
         android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,13 +86,16 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginStart="94dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="108dp"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_in"
         android:ems="10"
         android:hint="Password"
-        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_login_reg" />
 
@@ -70,10 +103,10 @@
         android:id="@+id/button_reg"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="268dp"
         android:text="Регистрация"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_pass_reg" />
 
@@ -81,12 +114,14 @@
         android:id="@+id/textToAuth_reg"
         android:layout_width="218dp"
         android:layout_height="53dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="36dp"
         android:gravity="center_horizontal"
         android:text="Уже есть аккаунт? Войдите в него!"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_reg" />
 

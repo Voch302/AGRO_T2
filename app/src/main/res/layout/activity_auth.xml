@@ -5,46 +5,58 @@
     android:id="@+id/text1_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="src_in"
+    android:focusableInTouchMode="true"
+    app:layout_constraintBaseline_creator="@integer/material_motion_duration_long_2"
     tools:context=".AuthActivity">
 
-    <TextView
-        android:id="@+id/TextAuth_main"
-        android:layout_width="wrap_content"
-        android:layout_height="84dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="164dp"
-        android:gravity="center_horizontal"
-        android:text="Вход \n Контроллер"
-        android:textSize="30dp"
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="547dp"
+        android:layout_height="880dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/ima65765ge" />
 
     <EditText
         android:id="@+id/user_login_auth"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="Login"
         android:inputType="text"
+        android:shadowColor="#FF0000"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextAuth_main" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <EditText
         android:id="@+id/user_pass_auth"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_in"
         android:ems="10"
         android:hint="Password"
         android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_login_auth" />
 
@@ -52,7 +64,7 @@
         android:id="@+id/button"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="224dp"
         android:backgroundTint="#FA0202"
         android:gravity="center"
         android:text="Вход"
@@ -65,22 +77,55 @@
         android:id="@+id/textToReg_auth"
         android:layout_width="117dp"
         android:layout_height="40dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="80dp"
         android:gravity="center"
         android:text="Нету аккаунта? Создайте его!"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintHorizontal_bias="0.867"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
-    <Switch
-        android:id="@+id/switchAuth"
-        android:layout_width="152dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="4dp"
-        android:text="Switch"
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="110dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="64dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextAuth_main" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image34543" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="182dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="96dp"
+        android:text="Driver tracker"
+        android:textAlignment="center"
+        android:textColor="#C5252C"
+        android:textColorHighlight="#C5252C"
+        android:textColorHint="#C5252C"
+        android:textColorLink="#C5252C"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="119dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="364dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        android:backgroundTint="#EB0000"
+        android:backgroundTintMode="src_in"
+        android:text="Забыли пороль?"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_pass_auth" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
