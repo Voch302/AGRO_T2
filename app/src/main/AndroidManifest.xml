@@ -59,6 +59,9 @@
             android:name=".ReportController"
             android:exported="true" />
         <activity
+            android:name=".Registration"
+            android:exported="true" />
+        <activity
             android:name=".SettingsController"
             android:exported="true" />
 
