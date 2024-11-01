@@ -20,9 +20,13 @@ class Registration : AppCompatActivity(){
 
 
         val fullNameAfterRegistration: TextView = findViewById(R.id.full_name)
-        val borDayAfterRegistration: TextView= findViewById(R.id.Bornday)
+        val bornDayAfterRegistration: TextView= findViewById(R.id.Bornday)
         val phoneNumberAfterRegistration: TextView= findViewById(R.id.Phone_number)
         val emailAfterRegistration: TextView= findViewById(R.id.mail_address)
+        val passAfterRegistration: TextView = findViewById(R.id.password)
+        var UserClass = User((phoneNumberAfterRegistration).toString(),(emailAfterRegistration).toString(),(passAfterRegistration).toString(),(bornDayAfterRegistration).toString(),  )
+
+
 
 
 
