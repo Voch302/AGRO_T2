@@ -8,143 +8,398 @@
     android:layout_height="match_parent"
     tools:context=".DriveOorderController">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".DriveOorderController">
-
-    <View
-        android:id="@+id/view6"
-        android:layout_width="400dp"
-        android:layout_height="75dp"
-        android:background="#BF2221"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView14"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="60dp"
-        android:text="Заказ Водителя"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="@+id/view6"
-        app:layout_constraintTop_toTopOf="@+id/view6" />
+        tools:context=".DriveOorderController">
 
-    <View
-        android:id="@+id/view7"
-        android:layout_width="394dp"
-        android:layout_height="124dp"
-        android:background="#908C8C"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view6" />
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/view6"
-        tools:srcCompat="@tools:sample/avatars" />
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="800 кг"
+            app:layout_constraintStart_toEndOf="@+id/textView82"
+            app:layout_constraintTop_toBottomOf="@+id/textView78" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="12dp"
-        android:text="Иванов И. И."
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/view6" />
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:text="Обычный"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView83"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Качество 8.01"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:text="263кг"
+            app:layout_constraintStart_toEndOf="@+id/textView84"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
-        android:text="ID : 00032"
-        app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintTop_toTopOf="@+id/view7" />
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="99dp"
+            android:text="20%"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="24dp"
-        android:text="Адресс : Колотушкино А2"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="51dp"
+            android:text="68%"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="@+id/view6"
-        app:layout_constraintTop_toTopOf="@+id/view6"
-        app:srcCompat="@drawable/pngtreevector_back_icon_4267356__2_" />
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:text="Обычный"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView83"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Площядка  : 3"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="48dp"
+            android:text="15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="88dp"
-        android:text="Статус : Выполняет"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view6" />
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:text="800 кг"
+            app:layout_constraintStart_toEndOf="@+id/textView82"
+            app:layout_constraintTop_toBottomOf="@+id/textView78" />
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
-        android:text="Отправка в 14:10"
-        app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        <TextView
+            android:id="@+id/textView93"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="99dp"
+            android:text="20%"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:text="Выгружает в 19:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        <TextView
+            android:id="@+id/textView94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="51dp"
+            android:text="68%"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:text="263кг"
+            app:layout_constraintStart_toEndOf="@+id/textView84"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
 
-<com.google.android.material.navigation.NavigationView
+        <View
+            android:id="@+id/view6"
+            android:layout_width="434dp"
+            android:layout_height="72dp"
+            android:background="#BF2221"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="92dp"
+            android:text="Заказ Водителя"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/view6"
+            app:layout_constraintTop_toTopOf="@+id/view6" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="419dp"
+            android:layout_height="124dp"
+            android:background="#CEC8C8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/view6"
+            tools:srcCompat="@mipmap/ic_agro_ava" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="Иванов И. И."
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Качество 8.01"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:text="ID : 00032"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="Адресс : Колотушкино А2"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Площядка  : 3"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="88dp"
+            android:text="Статус : Выполняет"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="40dp"
+            android:text="Отправка в 14:10"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="Выгружает в 19:00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Номер"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Хранит"
+            app:layout_constraintStart_toEndOf="@+id/textView77"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Сорт"
+            app:layout_constraintStart_toEndOf="@+id/textView78"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Выгрущить в кг"
+            app:layout_constraintStart_toEndOf="@+id/textView79"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="74dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text=" Запонить"
+            app:layout_constraintStart_toEndOf="@+id/textView80"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:text="800 кг"
+            app:layout_constraintStart_toEndOf="@+id/textView82"
+            app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:text="17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:text="263кг"
+            app:layout_constraintStart_toEndOf="@+id/textView84"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="99dp"
+            android:text="20%"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="51dp"
+            android:text="68%"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="28dp"
+            android:text="Обычный"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView83"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="С           На"
+            app:layout_constraintStart_toEndOf="@+id/textView80"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="128dp"
+            android:layout_marginBottom="152dp"
+            android:text="Связатся с Водитлем"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#898181"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Итог"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="331dp" />
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="796 кг"
+            tools:layout_editor_absoluteX="188dp"
+            tools:layout_editor_absoluteY="331dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
 android:id="@+id/nav"
 android:layout_width="wrap_content"
 android:layout_height="match_parent"

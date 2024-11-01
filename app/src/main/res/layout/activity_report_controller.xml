@@ -11,7 +11,102 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="515dp"
+            android:layout_height="1196dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="415dp"
+            android:layout_height="81dp"
+            android:background="#BF2221"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:text="Составить Отчёт"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/view13"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="80dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="36dp"
+            android:text="Категории Отчёов"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="4dp"
+            android:text="Водитель   ФИО   Качество   Заказы   Рейтинг   Выгрузка"
+            app:layout_constraintBottom_toTopOf="@+id/button10"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="12dp"
+            android:text="Бункеры   ID:Бункеров   Адресс   Заполненость"
+            app:layout_constraintBottom_toTopOf="@+id/button12"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="44dp"
+            android:text="За Время   Сколько Закаов   Сколько за этот периуд"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="4dp"
+            android:text="Заказы   ID:Заказов   Качество   Сорт   Количество"
+            app:layout_constraintBottom_toTopOf="@+id/button9"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav"
