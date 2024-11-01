@@ -8,14 +8,158 @@
     tools:context=".StatisticsController">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:context=".StatisticsController">
 
+        <View
+            android:id="@+id/view24"
+            android:layout_width="411dp"
+            android:layout_height="92dp"
+            android:layout_marginBottom="69dp"
+            android:background="#BF2221"
+            app:layout_constraintBottom_toTopOf="@+id/view25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Статистика"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view24"
+            app:layout_constraintEnd_toEndOf="@+id/view24"
+            app:layout_constraintStart_toStartOf="@+id/view24"
+            app:layout_constraintTop_toTopOf="@+id/view24"
+            app:layout_constraintVertical_bias="0.347" />
+
+        <View
+            android:id="@+id/view25"
+            android:layout_width="395dp"
+            android:layout_height="624dp"
+            android:background="#B5B0B0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view24"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="354dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/view25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view24" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="@+id/view25"
+            app:layout_constraintTop_toTopOf="@+id/view25"
+            app:srcCompat="@mipmap/ic_agro_ava" />
+
+        <View
+            android:id="@+id/view26"
+            android:layout_width="314dp"
+            android:layout_height="152dp"
+            android:layout_marginBottom="456dp"
+            android:background="#898181"
+            app:layout_constraintBottom_toBottomOf="@+id/view25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView126"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="148dp"
+            android:layout_marginBottom="124dp"
+            android:text="Иван Иванов Иванович"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/view26"
+            app:layout_constraintEnd_toEndOf="@+id/view26" />
+
+        <TextView
+            android:id="@+id/textView127"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="ID: 00032"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/view26"
+            app:layout_constraintTop_toTopOf="@+id/view26" />
+
+        <TextView
+            android:id="@+id/textView128"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Статус : Выполнено"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/view26"
+            app:layout_constraintTop_toBottomOf="@+id/textView126" />
+
+        <TextView
+            android:id="@+id/textView129"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Бункеров : 3"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/view26"
+            app:layout_constraintTop_toBottomOf="@+id/textView128" />
+
+        <TextView
+            android:id="@+id/textView130"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Выгружино : 500кг"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/view26"
+            app:layout_constraintTop_toBottomOf="@+id/textView129" />
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Погркшность : 18 кг"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/view26"
+            app:layout_constraintTop_toBottomOf="@+id/textView130" />
+
+        <TextView
+            android:id="@+id/textView132"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Завершил заказ в 19:25   24.10.2024 "
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/view26"
+            app:layout_constraintTop_toBottomOf="@+id/textView131" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

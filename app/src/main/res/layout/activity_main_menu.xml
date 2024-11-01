@@ -9,7 +9,7 @@
 
     <View
         android:id="@+id/red_block_main_menu"
-        android:layout_width="392dp"
+        android:layout_width="414dp"
         android:layout_height="152dp"
         android:background="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,6 +23,7 @@
         android:id="@+id/SNP_main_menu"
         android:layout_width="244dp"
         android:layout_height="23dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="2dp"
         android:text="Иван Иванов Иванович"
         android:textColor="#FFFFFF"
@@ -30,13 +31,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <TextView
         android:id="@+id/email_main_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="140dp"
         android:layout_marginBottom="4dp"
         android:text="1234@mail.ru"
         android:textColor="#FFFFFF"
@@ -44,7 +45,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SNP_main_menu"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="0.018" />
 
     <TextView
         android:id="@+id/ToOrder_main_menu"
@@ -75,7 +76,7 @@
         android:layout_width="179dp"
         android:layout_height="40dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="148dp"
+        android:layout_marginEnd="160dp"
         android:text="Рейтинг"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +90,7 @@
         android:text="Связаться с контролером"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_bias="0.769"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ToRating_main_menu" />
 
@@ -133,8 +134,8 @@
         android:id="@+id/imageView13"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="@+id/red_block_main_menu"
         app:layout_constraintTop_toTopOf="@+id/red_block_main_menu"
         app:srcCompat="@mipmap/ic_agro_ava" />

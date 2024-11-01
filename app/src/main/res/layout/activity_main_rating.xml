@@ -16,8 +16,8 @@
 
     <View
         android:id="@+id/view14"
-        android:layout_width="410dp"
-        android:layout_height="132dp"
+        android:layout_width="423dp"
+        android:layout_height="130dp"
         android:background="#BF2221"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
@@ -44,7 +44,7 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        app:srcCompat="@mipmap/ic_nfo_info_info" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -128,8 +128,8 @@
         android:id="@+id/imageView12"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginBottom="576dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="508dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/ic_agro_ava" />
@@ -138,7 +138,7 @@
         android:id="@+id/textView58"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="603dp"
+        android:layout_marginBottom="540dp"
         android:text="Иван И. И."
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,6 +148,7 @@
         android:id="@+id/textView59"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Качество 7.8"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/textView58" />
@@ -178,7 +179,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="592dp"
+        android:layout_marginBottom="532dp"
         android:text="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
