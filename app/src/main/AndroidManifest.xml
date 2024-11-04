@@ -44,7 +44,7 @@
             android:name=".orderActivity"
             android:exported="false" />
         <activity
-            android:name=".AuthActivity"
+            android:name=".Registration"
             android:exported="false" />
         <activity
             android:name=".settings"
@@ -65,13 +65,13 @@
             android:name=".ReportController"
             android:exported="true" />
         <activity
-            android:name=".Registration"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".SettingsController"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AuthActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

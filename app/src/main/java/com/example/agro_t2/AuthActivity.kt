@@ -44,6 +44,12 @@ class AuthActivity : AppCompatActivity() {
                     }
             }
 
+
+
+        }
+        textToReg.setOnClickListener{
+            val intent = Intent(this, Registration::class.java)
+            startActivity(intent)
         }
     }
 }
