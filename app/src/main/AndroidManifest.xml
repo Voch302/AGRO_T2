@@ -56,6 +56,18 @@
             android:name=".ChatControllerController"
             android:exported="true" />
         <activity
+            android:name=".about"
+            android:exported="true" />
+        <activity
+            android:name=".change_pass"
+            android:exported="true" />
+        <activity
+            android:name=".change_profile"
+            android:exported="true" />
+        <activity
+            android:name=".notification"
+            android:exported="true" />
+        <activity
             android:name=".StatisticsController"
             android:exported="true" />
         <activity
