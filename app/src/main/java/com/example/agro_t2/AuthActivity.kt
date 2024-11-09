@@ -1,5 +1,5 @@
 package com.example.agro_t2
-
+//гоша 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
