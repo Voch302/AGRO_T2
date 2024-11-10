@@ -78,10 +78,10 @@
 
     <TextView
         android:id="@+id/textView72"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:text="Работник Месяца:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView71" />
@@ -91,7 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="488dp"
+        android:layout_marginBottom="448dp"
         android:text="Иванов Иван Иванович"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView21" />
@@ -101,7 +101,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginBottom="448dp"
+        android:layout_marginBottom="408dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/ic_agro_ava" />
@@ -119,7 +119,6 @@
         android:id="@+id/textView114"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="176dp"
         android:text="+ 7-888-888-88-88"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,8 +128,8 @@
         android:id="@+id/textView115"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="416dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="388dp"
         android:text="Выполнил 58 заказов с оценкой 9.66"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -140,6 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
         android:text="7.8"
         app:layout_constraintStart_toEndOf="@+id/imageView21"
         app:layout_constraintTop_toBottomOf="@+id/textView73" />
@@ -148,8 +148,8 @@
         android:id="@+id/view21"
         android:layout_width="376dp"
         android:layout_height="162dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="188dp"
         android:background="#B1B0B0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

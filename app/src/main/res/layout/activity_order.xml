@@ -47,7 +47,7 @@
             android:layout_height="20dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="188dp"
-            android:text="Статус заказа: Ожидание"
+            android:text="Статус заказа : Ожидание"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
             android:layout_width="230dp"
             android:layout_height="20dp"
             android:layout_marginStart="32dp"
-            android:text="Адрес: Колинина А3"
+            android:text="Адрес : Колинина А3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textOrderStatus" />
 
@@ -67,7 +67,7 @@
             android:layout_width="230dp"
             android:layout_height="20dp"
             android:layout_marginStart="32dp"
-            android:text="Время прибытие:"
+            android:text="Время прибытие :"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textTimeofsending" />
 
@@ -76,7 +76,7 @@
             android:layout_width="230dp"
             android:layout_height="20dp"
             android:layout_marginStart="32dp"
-            android:text="Время Отправки:"
+            android:text="Время Отправки :"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -105,7 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="Качество: 7.89"
+            android:text="Качество 7.89"
             app:layout_constraintStart_toEndOf="@+id/imageViewAgro"
             app:layout_constraintTop_toBottomOf="@+id/textViewAgro" />
 
@@ -114,7 +114,7 @@
             android:layout_width="230dp"
             android:layout_height="20dp"
             android:layout_marginStart="32dp"
-            android:text="Площядка: "
+            android:text="Площядка : "
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textAddress" />
 
@@ -134,7 +134,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="28dp"
-            android:text="Выгрущить:"
+            android:text="Выгрущить :"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textArrivalTime" />
 
@@ -143,7 +143,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="52dp"
-            android:text="Сорт: "
+            android:text="Сорт : "
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
@@ -152,7 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Хранилище: "
+            android:text="Хранилище : "
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
@@ -262,7 +262,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="52dp"
-            android:text="Название: "
+            android:text="Название : "
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -366,7 +366,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="96dp"
             android:backgroundTint="#C2C2C2"
-            android:text="Связатся с Контролером"
+            android:text="Связатся с Контролёром"
             android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button3" />
