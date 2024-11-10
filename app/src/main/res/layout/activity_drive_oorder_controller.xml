@@ -207,7 +207,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginTop="24dp"
-            android:text="Адресс : Колотушкино А2"
+            android:text="Адрес: Колотушкино А2"
             app:layout_constraintStart_toStartOf="@+id/view7"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -216,7 +216,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:text="Площядка  : 3"
+            android:text="Площадка: 3"
             app:layout_constraintStart_toStartOf="@+id/view7"
             app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -226,7 +226,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="88dp"
-            android:text="Статус : Выполняет"
+            android:text="Статус: Выполняет"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view6" />
 
@@ -285,7 +285,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="32dp"
-            android:text="Выгрущить в кг"
+            android:text="Выгрузить в кг"
             app:layout_constraintStart_toEndOf="@+id/textView79"
             app:layout_constraintTop_toBottomOf="@+id/view7" />
 
@@ -295,7 +295,7 @@
             android:layout_height="22dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:text=" Запонить"
+            android:text="Заполнить"
             app:layout_constraintStart_toEndOf="@+id/textView80"
             app:layout_constraintTop_toBottomOf="@+id/view7" />
 
@@ -375,7 +375,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="128dp"
             android:layout_marginBottom="152dp"
-            android:text="Связатся с Водитлем"
+            android:text="Связаться с Водителем"
             android:textColor="#FFFFFF"
             android:textColorLink="#898181"
             app:layout_constraintBottom_toBottomOf="parent"

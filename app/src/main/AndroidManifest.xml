@@ -32,6 +32,9 @@
             android:name=".MainPage"
             android:exported="false" />
         <activity
+            android:name=".notification_controller"
+            android:exported="false" />
+        <activity
             android:name=".Main_Menu"
             android:exported="false" />
         <activity
@@ -57,6 +60,15 @@
             android:exported="true" />
         <activity
             android:name=".about"
+            android:exported="true" />
+        <activity
+            android:name=".about_controller"
+            android:exported="true" />
+        <activity
+            android:name=".change_pass_controller"
+            android:exported="true" />
+        <activity
+            android:name=".change_profile_controller"
             android:exported="true" />
         <activity
             android:name=".change_pass"

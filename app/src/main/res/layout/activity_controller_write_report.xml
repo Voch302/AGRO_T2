@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Всего заказов : 130"
+        android:text="Всего заказов: 130"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view18" />
 
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:text="Обший вес комбикорма: 37.3 т"
+        android:text="Общий вес комбикорма: 37.3 т"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView69" />
 
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:text="Среденее оклонение от нормы : 4%"
+        android:text="Среднее оклонение от нормы: 4%"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView70" />
 
@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="488dp"
-        android:text="Иванов Иванович Иван"
+        android:text="Иванов Иван Иванович"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView21" />
 
@@ -111,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Рейтинг : 35 Место"
+        android:text="Рейтинг: 35 Место"
         app:layout_constraintStart_toEndOf="@+id/textView74"
         app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="176dp"
-        android:text="+ 8-888-888-88-88"
+        android:text="+ 7-888-888-88-88"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView74" />
 
@@ -131,7 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="416dp"
-        android:text="Выполнил 58 заказов с качеством 9.66"
+        android:text="Выполнил 58 заказов с оценкой 9.66"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

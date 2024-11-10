@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="148dp"
             android:layout_marginBottom="124dp"
-            android:text="Иван Иванов Иванович"
+            android:text="Иванов Иван Иванович"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/view26"
             app:layout_constraintEnd_toEndOf="@+id/view26" />
@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Статус : Выполнено"
+            android:text="Статус: Выполнено"
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/view26"
             app:layout_constraintTop_toBottomOf="@+id/textView126" />
@@ -125,7 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Бункеров : 3"
+            android:text="Бункеров: 3"
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/view26"
             app:layout_constraintTop_toBottomOf="@+id/textView128" />
@@ -135,7 +135,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Выгружино : 500кг"
+            android:text="Выгружино: 500кг"
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/view26"
             app:layout_constraintTop_toBottomOf="@+id/textView129" />
@@ -145,7 +145,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Погркшность : 18 кг"
+            android:text="Погркшность: 18 кг"
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/view26"
             app:layout_constraintTop_toBottomOf="@+id/textView130" />
