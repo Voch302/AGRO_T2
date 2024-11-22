@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.agro_t2.databinding.ActivitySettingsControllerBinding
 
 class SettingsController : AppCompatActivity() {
@@ -49,7 +47,7 @@ class SettingsController : AppCompatActivity() {
             }
             when (it.itemId) {
                 R.id.controllerNavMenuController -> {
-                    val intent = Intent(this@SettingsController, StatisticsController::class.java)
+                    val intent = Intent(this@SettingsController, DriverOrderController::class.java)
                     startActivity(intent)
                 }
             }

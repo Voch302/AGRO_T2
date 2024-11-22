@@ -80,7 +80,7 @@
             android:name=".notification"
             android:exported="true" />
         <activity
-            android:name=".StatisticsController"
+            android:name=".DriverOrderController"
             android:exported="true" />
         <activity
             android:name=".RatingController"

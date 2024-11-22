@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.agro_t2.databinding.ActivityChangeProfileControllerBinding
 
 class change_profile_controller : AppCompatActivity() {
@@ -38,7 +36,7 @@ class change_profile_controller : AppCompatActivity() {
             }
             when (it.itemId) {
                 R.id.controllerNavMenuController -> {
-                    val intent = Intent(this@change_profile_controller, StatisticsController::class.java)
+                    val intent = Intent(this@change_profile_controller, DriverOrderController::class.java)
                     startActivity(intent)
                 }
             }

@@ -4,16 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import com.example.agro_t2.databinding.ActivityStatisticsControllerBinding
+import com.example.agro_t2.databinding.ActivityDriverOrderControllerBinding
 
 
-class StatisticsController : AppCompatActivity() {
-    lateinit var binding: ActivityStatisticsControllerBinding
+class DriverOrderController : AppCompatActivity() {
+    lateinit var binding: ActivityDriverOrderControllerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityStatisticsControllerBinding.inflate(layoutInflater)
+        binding = ActivityDriverOrderControllerBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
