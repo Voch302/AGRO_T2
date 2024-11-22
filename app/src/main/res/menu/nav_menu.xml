@@ -2,17 +2,32 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <item android:title="Category 1">
+    <item android:title="">
         <menu>
-            <item android:title = "Заказ" android:id="@+id/orderNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
-            <item android:title = "История заказов" android:id="@+id/orderHistoryNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
-            <item android:title = "Рейтинг" android:id="@+id/ratingNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
-            <item android:title = "Связаться с контролером" android:id="@+id/controllerNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
-            <item android:title = "Настройки" android:id="@+id/settingsNavMenu" android:icon="@drawable/ic_launcher_foreground"/>
+            <item
+                android:id="@+id/orderNavMenu"
+                android:icon="@mipmap/ic_orderg_box"
+                android:title="Заказы" />
 
+            <item
+                android:id="@+id/orderHistoryNavMenu"
+                android:icon="@mipmap/ic_istoriya"
+                android:title="История Заказов" />
 
+            <item
+                android:id="@+id/ratingNavMenu"
+                android:icon="@mipmap/ic_rang"
+                android:title="Рейтинг водителей" />
+
+            <item
+                android:id="@+id/settingsNavMenu"
+                android:icon="@mipmap/ic_srtings_s"
+                android:title="Настройки" />
+
+            <item
+                android:id="@+id/controllerNavMenu"
+                android:icon="@mipmap/ic_chat"
+                android:title="Связь с водителем" />
         </menu>
-
-
     </item>
 </menu>

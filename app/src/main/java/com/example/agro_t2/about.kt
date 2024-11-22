@@ -54,3 +54,4 @@ class about : AppCompatActivity() {
 
     }
 }
+// enableEdgeToEdge() . правки . разобраться с бд, добавитть функционал и регистрация с входом. фиксы.

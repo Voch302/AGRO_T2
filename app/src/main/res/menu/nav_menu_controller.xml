@@ -2,14 +2,34 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <item android:title="Category 1">
+    <item android:title="">
         <menu>
-            <item android:title = "Водитель заказа" android:id="@+id/orderNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
-            <item android:title = "Связь с водителем" android:id="@+id/orderHistoryNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
-            <item android:title = "Рейтинг водителей" android:id="@+id/ratingNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
-            <item android:title = "Статистика" android:id="@+id/controllerNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
-            <item android:title = "Отчет" android:id ="@+id/reportNavMenuController" android:icon = "@drawable/ic_launcher_foreground"/>
-            <item android:title = "Настройки" android:id="@+id/settingsNavMenuController" android:icon="@drawable/ic_launcher_foreground"/>
+            <item
+                android:id="@+id/orderNavMenuController"
+                android:icon="@mipmap/ic_orderg_box"
+                android:title="Заказы водителей" />
+            <item
+                android:id="@+id/orderHistoryNavMenuController"
+                android:icon="@mipmap/ic_istoriya"
+                android:title="Связь с водителем" />
+            <item
+                android:id="@+id/ratingNavMenuController"
+                android:icon="@mipmap/ic_rang"
+                android:title="Рейтинг водителей" />
+            <item
+                android:id="@+id/controllerNavMenuController"
+                android:icon="@mipmap/ic_stat_menu_foreground"
+                android:title="Статистика" />
+            <item
+                android:id="@+id/reportNavMenuController"
+                android:icon="@mipmap/ic_report_menu1_foreground"
+                android:title="Отчет" />
+            <item
+                android:id="@+id/settingsNavMenuController"
+                android:icon="@mipmap/ic_srtings_s"
+                android:title="Настройки" />
+
+
         </menu>
 
 
