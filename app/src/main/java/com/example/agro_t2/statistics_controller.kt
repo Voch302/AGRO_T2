@@ -1,20 +1,20 @@
 package com.example.agro_t2
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.agro_t2.databinding.ActivityRatingControllerBinding
+import android.content.Intent
+import android.widget.TextView
+
+import com.example.agro_t2.databinding.ActivityStatisticsControllerBinding
 
 
-class RatingController : AppCompatActivity() {
-    lateinit var binding: ActivityRatingControllerBinding
+class statistics_controller : AppCompatActivity() {
+    lateinit var binding: ActivityStatisticsControllerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityRatingControllerBinding.inflate(layoutInflater)
+        binding = ActivityStatisticsControllerBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
@@ -57,10 +57,6 @@ class RatingController : AppCompatActivity() {
             }
             true
         }
-
-
-
-
 
 
 

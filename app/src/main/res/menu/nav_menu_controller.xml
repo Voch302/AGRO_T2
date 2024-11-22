@@ -5,11 +5,11 @@
     <item android:title="">
         <menu>
             <item
-                android:id="@+id/orderNavMenuController"
+                android:id="@+id/OrderListNavMenuController"
                 android:icon="@mipmap/ic_orderg_box"
                 android:title="Заказы водителей" />
             <item
-                android:id="@+id/orderHistoryNavMenuController"
+                android:id="@+id/ChatWithDriverNavMenuController"
                 android:icon="@mipmap/ic_istoriya"
                 android:title="Связь с водителем" />
             <item
@@ -17,7 +17,7 @@
                 android:icon="@mipmap/ic_rang"
                 android:title="Рейтинг водителей" />
             <item
-                android:id="@+id/controllerNavMenuController"
+                android:id="@+id/StatisticsNavMenuController"
                 android:icon="@mipmap/ic_stat_menu_foreground"
                 android:title="Статистика" />
             <item

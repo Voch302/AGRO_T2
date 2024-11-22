@@ -39,7 +39,7 @@ class AuthActivity : AppCompatActivity() {
                     }
                     if ((login == "con") && (pass == "con")) {
                         Toast.makeText(this, "Успешный вход", Toast.LENGTH_LONG).show()
-                        val intentLogIn = Intent(this, DriveOorderController::class.java)
+                        val intentLogIn = Intent(this, statistics_controller::class.java)
                         startActivity(intentLogIn)
                     }
             }

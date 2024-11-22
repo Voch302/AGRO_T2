@@ -20,26 +20,26 @@ class ReportController : AppCompatActivity() {
 
         binding.nav.setNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.orderNavMenuController -> {
-                    val intent = Intent(this, orderActivity::class.java)
+                R.id.OrderListNavMenuController -> {
+                    val intent = Intent(this, DriverOrderListController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
-                R.id.orderHistoryNavMenuController -> {
-                    val intent = Intent(this, OrderHistory::class.java)
+                R.id.ChatWithDriverNavMenuController -> {
+                    val intent = Intent(this, ChatControllerController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
                 R.id.ratingNavMenuController -> {
-                    val intent = Intent(this, MainRating::class.java)
+                    val intent = Intent(this, RatingController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
-                R.id.controllerNavMenuController -> {
-                    val intent = Intent(this, ChatControllerController::class.java)
+                R.id.StatisticsNavMenuController -> {
+                    val intent = Intent(this, statistics_controller::class.java)
                     startActivity(intent)
                 }
             }

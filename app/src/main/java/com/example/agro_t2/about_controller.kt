@@ -17,38 +17,38 @@ class about_controller : AppCompatActivity() {
 
         binding.nav.setNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.orderNavMenuController -> {
-                    val intent = Intent(this@about_controller, DriveOorderController::class.java)
+                R.id.OrderListNavMenuController -> {
+                    val intent = Intent(this, DriverOrderListController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
-                R.id.orderHistoryNavMenuController -> {
-                    val intent = Intent(this@about_controller, ChatControllerController::class.java)
+                R.id.ChatWithDriverNavMenuController -> {
+                    val intent = Intent(this, ChatControllerController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
                 R.id.ratingNavMenuController -> {
-                    val intent = Intent(this@about_controller, RatingController::class.java)
+                    val intent = Intent(this, RatingController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
-                R.id.controllerNavMenuController -> {
-                    val intent = Intent(this@about_controller, DriverOrderController::class.java)
+                R.id.StatisticsNavMenuController -> {
+                    val intent = Intent(this, statistics_controller::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
                 R.id.settingsNavMenuController -> {
-                    val intent = Intent(this@about_controller, SettingsController::class.java)
+                    val intent = Intent(this, SettingsController::class.java)
                     startActivity(intent)
                 }
             }
             when(it.itemId){
                 R.id.reportNavMenuController ->{
-                    val intent = Intent(this@about_controller, ReportController::class.java)
+                    val intent = Intent(this, ReportController::class.java)
                     startActivity(intent)
                 }
             }

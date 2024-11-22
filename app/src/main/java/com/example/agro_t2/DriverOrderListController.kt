@@ -4,41 +4,41 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.agro_t2.databinding.ActivityDriverOrderControllerBinding
+import com.example.agro_t2.databinding.ActivityDriverOrderListControllerBinding
 
 
-class DriverOrderController : AppCompatActivity() {
-    lateinit var binding: ActivityDriverOrderControllerBinding
+class DriverOrderListController : AppCompatActivity() {
+    lateinit var binding: ActivityDriverOrderListControllerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityDriverOrderControllerBinding.inflate(layoutInflater)
+        binding = ActivityDriverOrderListControllerBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
 
         binding.nav.setNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.orderNavMenuController -> {
-                    val intent = Intent(this, orderActivity::class.java)
+                R.id.OrderListNavMenuController -> {
+                    val intent = Intent(this, DriverOrderListController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
-                R.id.orderHistoryNavMenuController -> {
-                    val intent = Intent(this, OrderHistory::class.java)
+                R.id.ChatWithDriverNavMenuController -> {
+                    val intent = Intent(this, ChatControllerController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
                 R.id.ratingNavMenuController -> {
-                    val intent = Intent(this, MainRating::class.java)
+                    val intent = Intent(this, RatingController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
-                R.id.controllerNavMenuController -> {
-                    val intent = Intent(this, ChatControllerController::class.java)
+                R.id.StatisticsNavMenuController -> {
+                    val intent = Intent(this, statistics_controller::class.java)
                     startActivity(intent)
                 }
             }

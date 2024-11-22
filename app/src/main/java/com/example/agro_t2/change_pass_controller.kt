@@ -17,13 +17,13 @@ class change_pass_controller : AppCompatActivity() {
 
         binding.nav.setNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.orderNavMenuController -> {
-                    val intent = Intent(this, DriveOorderController::class.java)
+                R.id.OrderListNavMenuController -> {
+                    val intent = Intent(this, DriverOrderListController::class.java)
                     startActivity(intent)
                 }
             }
             when (it.itemId) {
-                R.id.orderHistoryNavMenuController -> {
+                R.id.ChatWithDriverNavMenuController -> {
                     val intent = Intent(this, ChatControllerController::class.java)
                     startActivity(intent)
                 }
@@ -35,8 +35,8 @@ class change_pass_controller : AppCompatActivity() {
                 }
             }
             when (it.itemId) {
-                R.id.controllerNavMenuController -> {
-                    val intent = Intent(this, DriverOrderController::class.java)
+                R.id.StatisticsNavMenuController -> {
+                    val intent = Intent(this, statistics_controller::class.java)
                     startActivity(intent)
                 }
             }
