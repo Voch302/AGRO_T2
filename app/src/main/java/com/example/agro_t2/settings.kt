@@ -19,11 +19,11 @@ class settings : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        val notifButton:Button = findViewById(R.id.button5)
-        val changeProfileButton: Button = findViewById(R.id.buttonNewProfile)
-        val changePassButton: Button = findViewById(R.id.button6)
-        val aboutButton:Button =findViewById(R.id.button7)
-        val buttonExit: Button = findViewById(R.id.buttonExitAccount)
+        val notifButton:Button = findViewById(R.id.button_notification)
+        val changeProfileButton: Button = findViewById(R.id.button_edit_profile)
+        val changePassButton: Button = findViewById(R.id.button_change_password)
+        val aboutButton:Button =findViewById(R.id.button_about)
+        val buttonExit: Button = findViewById(R.id.button_logout)
 
         binding.nav.setNavigationItemSelectedListener {
             when (it.itemId) {

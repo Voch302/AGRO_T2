@@ -18,11 +18,11 @@
                 android:title="Рейтинг водителей" />
             <item
                 android:id="@+id/StatisticsNavMenuController"
-                android:icon="@mipmap/ic_stat_menu_foreground"
+                android:icon="@mipmap/icon_statistiks24_foreground"
                 android:title="Статистика" />
             <item
                 android:id="@+id/reportNavMenuController"
-                android:icon="@mipmap/ic_report_menu1_foreground"
+                android:icon="@mipmap/icon_report13_foreground"
                 android:title="Отчет" />
             <item
                 android:id="@+id/settingsNavMenuController"

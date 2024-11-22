@@ -33,7 +33,7 @@ class statistics_controller : AppCompatActivity() {
             }
             when (it.itemId) {
                 R.id.ratingNavMenuController -> {
-                    val intent = Intent(this, RatingController::class.java)
+                    val intent = Intent(this, RatingForController::class.java)
                     startActivity(intent)
                 }
             }
