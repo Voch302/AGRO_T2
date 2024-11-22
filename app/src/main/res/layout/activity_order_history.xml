@@ -16,8 +16,10 @@
 
     <View
         android:id="@+id/view19"
-        android:layout_width="437dp"
-        android:layout_height="92dp"
+        android:layout_width="407dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
         android:background="#B4201F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,8 +39,8 @@
     <View
         android:id="@+id/view22"
         android:layout_width="343dp"
-        android:layout_height="159dp"
-        android:layout_marginStart="24dp"
+        android:layout_height="242dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:background="#AAAAAA"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:text="Статус: Выполнил"
+        android:text="Статус: "
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/view22"
@@ -58,11 +60,11 @@
 
     <TextView
         android:id="@+id/textView119"
-        android:layout_width="197dp"
+        android:layout_width="0dp"
         android:layout_height="22dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="Адресс: Колотушкина А2"
+        android:text="Адрес: "
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/view22"
@@ -73,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Бункеров 3 (БУ-2 ,  БУ-3 , БУ-9)"
+        android:text="Бункеров :"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/view22"
         app:layout_constraintTop_toBottomOf="@+id/textView119" />
@@ -83,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Выгружено: 680 кг"
+        android:text="Выгружено:"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/view22"
         app:layout_constraintTop_toBottomOf="@+id/textView120" />
@@ -93,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Сорт: Обычный"
+        android:text="Сорт: "
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/view22"
         app:layout_constraintTop_toBottomOf="@+id/textView121" />
@@ -103,8 +105,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="ID: 00032"
+        android:layout_marginEnd="68dp"
+        android:text="ID: "
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/view22"
         app:layout_constraintTop_toTopOf="@+id/view22" />
@@ -113,11 +115,12 @@
         android:id="@+id/textView124"
         android:layout_width="105dp"
         android:layout_height="36dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="220dp"
         android:text="Оклонение от нормы: 3%"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/view22"
-        app:layout_constraintTop_toBottomOf="@+id/textView123" />
+        app:layout_constraintTop_toBottomOf="@+id/textView122" />
 
     <TextView
         android:id="@+id/textView125"
@@ -125,10 +128,80 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Качество выполненой работы 9.01"
+        android:text="Качество выполненой работы "
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/view22"
         app:layout_constraintEnd_toEndOf="@+id/view22" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="Выполнен"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView119"
+        app:layout_constraintStart_toEndOf="@+id/textView118" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Колотушкина А2"
+        app:layout_constraintStart_toEndOf="@+id/textView119"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:text="3 (БУ-2 ,  БУ-3 , БУ-9)"
+        app:layout_constraintStart_toEndOf="@+id/textView120"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="680 кг"
+        app:layout_constraintBottom_toTopOf="@+id/textView122"
+        app:layout_constraintStart_toEndOf="@+id/textView121" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="Обычный"
+        app:layout_constraintStart_toEndOf="@+id/textView122"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="207dp"
+        android:text="00032"
+        app:layout_constraintBottom_toBottomOf="@+id/view22"
+        app:layout_constraintStart_toEndOf="@+id/textView123" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="9.01"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view22"
+        app:layout_constraintStart_toEndOf="@+id/textView125" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

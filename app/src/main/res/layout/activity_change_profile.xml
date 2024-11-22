@@ -13,13 +13,134 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <View
             android:id="@+id/view6"
-            android:layout_width="434dp"
-            android:layout_height="72dp"
+            android:layout_width="414dp"
+            android:layout_height="168dp"
             android:background="#BF2221"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="105dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="308dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_agro_ava" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.871"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="360dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="28dp"
+            android:hint="О себе"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText3"
+            android:layout_width="294dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Фамилия"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText4"
+            android:layout_width="290dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Отчество"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText5"
+            android:layout_width="284dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Номер телефона "
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText6"
+            android:layout_width="289dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Почта"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText7"
+            android:layout_width="294dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="50dp"
+            android:hint="Номер машины"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText2"
+            android:layout_width="280dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Имя"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

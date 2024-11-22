@@ -14,372 +14,290 @@
         android:layout_height="match_parent"
         tools:context=".orderActivity">
 
-        <ImageView
-            android:id="@+id/imageViewAgro"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.111"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.147"
-            tools:srcCompat="@mipmap/ic_agro_ava" />
+
 
         <TextView
-            android:id="@+id/textViewAgro"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="8dp"
-            android:text="Петренко М.В."
+            android:id="@+id/title_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заказ"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.032"
-            app:layout_constraintStart_toEndOf="@+id/imageViewAgro"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#B00000"
+            android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.1" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/textOrderStatus"
-            android:layout_width="230dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="188dp"
-            android:text="Статус заказа : Ожидание"
+        <!-- Информация о пользователе -->
+
+        <!-- Статус заказа -->
+
+        <LinearLayout
+            android:id="@+id/user_info"
+            android:layout_width="426dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="14dp"
+            android:background="#D9D9D9"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_order">
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_agro_ava" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Петренко М.В."
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Качество 7.89"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <!-- Таблица данных -->
+
+        <!-- Кнопки -->
+        <TableLayout
+            android:id="@+id/data_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView148">
 
-        <TextView
-            android:id="@+id/textAddress"
-            android:layout_width="230dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="32dp"
-            android:text="Адрес : Колинина А3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textOrderStatus" />
+            <!-- Строка заголовков -->
+            <TableRow>
 
-        <TextView
-            android:id="@+id/textArrivalTime"
-            android:layout_width="230dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="32dp"
-            android:text="Время прибытие :"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textTimeofsending" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Выгрузить"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textTimeofsending"
-            android:layout_width="230dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="32dp"
-            android:text="Время Отправки :"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Сорт"
+                    android:textStyle="bold" />
 
-        <View
-            android:id="@+id/view8"
-            android:layout_width="412dp"
-            android:layout_height="86dp"
-            android:background="#BF2221"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Хранилище"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Название"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- Строка данных -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="100 кг" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Обычный" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:progress="43" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="11" />
+            </TableRow>
+
+            <!-- Добавьте больше строк, если нужно -->
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#CCCCCC"
+            android:text="Начать Выполнение"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="172dp"
-            android:text="Заказ"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            app:layout_constraintEnd_toEndOf="@+id/view8"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:text="Качество 7.89"
-            app:layout_constraintStart_toEndOf="@+id/imageViewAgro"
-            app:layout_constraintTop_toBottomOf="@+id/textViewAgro" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="230dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="32dp"
-            android:text="Площядка : "
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textAddress" />
+            app:layout_constraintTop_toBottomOf="@id/data_table" />
 
-        <View
-            android:id="@+id/view10"
-            android:layout_width="50dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginBottom="312dp"
-            android:background="#C4C4C4"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/view9" />
+        <Button
+            android:id="@+id/button_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#CCCCCC"
+            android:text="Связаться с Контролёром"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_start" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/textView75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Статус заказа :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_info" />
+
+        <TextView
+            android:id="@+id/textView138"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="213dp"
+            app:layout_constraintStart_toEndOf="@+id/textView144"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView139"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="28dp"
-            android:text="Выгрущить :"
+            android:layout_marginTop="16dp"
+            android:text="Площадка : "
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textArrivalTime" />
+            app:layout_constraintTop_toBottomOf="@+id/textView142" />
 
         <TextView
-            android:id="@+id/textView31"
+            android:id="@+id/textView141"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:text="Сорт : "
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Сектор 2"
+            app:layout_constraintStart_toEndOf="@+id/textView139"
+            app:layout_constraintTop_toBottomOf="@+id/textView144" />
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/textView142"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Хранилище : "
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView31" />
-
-        <TextView
-            android:id="@+id/textView34"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginBottom="392dp"
-            android:text="100 кг"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView38" />
-
-        <TextView
-            android:id="@+id/textView35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="392dp"
-            android:text="100 кг"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView34" />
-
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginBottom="392dp"
-            android:text="100 кг"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView35" />
-
-        <TextView
-            android:id="@+id/textView37"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="236dp"
-            android:layout_marginBottom="372dp"
-            android:text="Обычный"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView31" />
-
-        <TextView
-            android:id="@+id/textView40"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:layout_marginBottom="372dp"
-            android:text="Обычный"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView31" />
-
-        <TextView
-            android:id="@+id/textView39"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="88dp"
-            android:layout_marginBottom="372dp"
-            android:text="Обычный"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView31" />
-
-        <TextView
-            android:id="@+id/textView42"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="372dp"
-            android:text="Обычный"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView31" />
-
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="8dp"
-            android:text="100 кг"
-            app:layout_constraintBottom_toTopOf="@+id/textView42"
-            app:layout_constraintStart_toEndOf="@+id/textView30" />
-
-        <View
-            android:id="@+id/view9"
-            android:layout_width="50dp"
-            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="312dp"
-            android:background="#C2C2C2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/view12" />
-
-        <View
-            android:id="@+id/view12"
-            android:layout_width="50dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="312dp"
-            android:background="#C2C2C2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/textView43"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="52dp"
-            android:text="Название : "
+            android:text="Адрес : "
+            app:layout_constraintEnd_toStartOf="@+id/textView144"
+            app:layout_constraintHorizontal_bias="0.207"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+            app:layout_constraintTop_toBottomOf="@+id/textView75" />
 
         <TextView
-            android:id="@+id/textView44"
+            android:id="@+id/textView144"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="72dp"
-            android:text="A - 2"
-            app:layout_constraintEnd_toStartOf="@+id/textView45"
-            app:layout_constraintTop_toBottomOf="@+id/view11" />
-
-        <TextView
-            android:id="@+id/textView47"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="28dp"
-            android:text="A - 2"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="136dp"
+            android:text="ул.Колина 34 Блок А"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view12" />
+            app:layout_constraintTop_toBottomOf="@+id/textView145" />
 
         <TextView
-            android:id="@+id/textView46"
+            android:id="@+id/textView145"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="48dp"
-            android:text="A - 2"
-            app:layout_constraintEnd_toStartOf="@+id/textView47"
-            app:layout_constraintTop_toBottomOf="@+id/view9" />
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Выполняется"
+            app:layout_constraintStart_toEndOf="@+id/textView75"
+            app:layout_constraintTop_toBottomOf="@+id/user_info" />
 
         <TextView
-            android:id="@+id/textView45"
+            android:id="@+id/textView146"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="40dp"
-            android:text="A - 2"
-            app:layout_constraintEnd_toStartOf="@+id/textView46"
-            app:layout_constraintTop_toBottomOf="@+id/view10" />
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="13dp"
+            android:text="Время отправки :"
+            app:layout_constraintEnd_toStartOf="@+id/textView147"
+            app:layout_constraintTop_toBottomOf="@+id/textView139" />
 
         <TextView
-            android:id="@+id/textView50"
+            android:id="@+id/textView147"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="12dp"
-            android:text="33%"
-            app:layout_constraintEnd_toEndOf="@+id/view10"
-            app:layout_constraintTop_toTopOf="@+id/view10" />
-
-        <TextView
-            android:id="@+id/textView52"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="33%"
-            app:layout_constraintEnd_toEndOf="@+id/view12"
-            app:layout_constraintTop_toBottomOf="@+id/textView37" />
-
-        <TextView
-            android:id="@+id/textView53"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="12dp"
-            android:text="33%"
-            app:layout_constraintEnd_toEndOf="@+id/view9"
-            app:layout_constraintTop_toTopOf="@+id/view9" />
-
-        <View
-            android:id="@+id/view11"
-            android:layout_width="50dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginBottom="312dp"
-            android:background="#C2C2C2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/view10" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="112dp"
-            android:layout_marginBottom="152dp"
-            android:backgroundTint="#C2C2C2"
-            android:text="Начать Выполнение"
-            android:textColor="#000000"
-            android:textColorLink="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="96dp"
-            android:backgroundTint="#C2C2C2"
-            android:text="Связатся с Контролёром"
-            android:textColor="#000000"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="233dp"
+            android:text="14:00"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintTop_toBottomOf="@+id/textView141" />
 
         <TextView
-            android:id="@+id/textView54"
+            android:id="@+id/textView148"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="12dp"
-            android:text="33%"
-            app:layout_constraintEnd_toEndOf="@+id/view11"
-            app:layout_constraintTop_toTopOf="@+id/view11" />
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="14dp"
+            android:text="Время выгрузки :"
+            app:layout_constraintEnd_toStartOf="@+id/textView149"
+            app:layout_constraintTop_toBottomOf="@+id/textView146" />
+
+        <TextView
+            android:id="@+id/textView149"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="232dp"
+            android:text="19:00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView147" />
+
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
