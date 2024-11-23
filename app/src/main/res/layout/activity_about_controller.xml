@@ -20,7 +20,6 @@
             android:background="#BF2221"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -29,6 +28,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/nav_menu_controller"
-        app:headerLayout="@layout/headler_controller"/>
+        app:headerLayout="@layout/header"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

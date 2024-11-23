@@ -1,9 +1,11 @@
 package com.example.agro_t2
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -60,10 +62,20 @@ class settings : AppCompatActivity() {
         }
 
 
+        var isGreen = false
+
         notifButton.setOnClickListener {
-            val intent = Intent(this, notification::class.java)
-            startActivity(intent)
+            if (isGreen) {
+                notifButton.setBackgroundColor(Color.RED)
+                Toast.makeText(this, "Уведомления выключены", Toast.LENGTH_LONG).show()
+            } else {
+                notifButton.setBackgroundColor(Color.GREEN)
+                Toast.makeText(this, "Уведомления включены", Toast.LENGTH_LONG).show()
+            }
+            isGreen = !isGreen
         }
+
+
         changeProfileButton.setOnClickListener {
             val intent = Intent(this, change_profile::class.java)
             startActivity(intent)
