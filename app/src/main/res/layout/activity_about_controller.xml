@@ -20,6 +20,111 @@
             android:background="#BF2221"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="238dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="108dp"
+            android:text="О приложении"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/view6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/view6"
+            app:layout_constraintTop_toTopOf="@+id/view6"
+            app:srcCompat="@mipmap/ic_agro_ava" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="198dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="68dp"
+            android:text="Версия приложения"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="37dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginBottom="10dp"
+            android:text="1.0"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView35"
+            app:layout_constraintStart_toEndOf="@+id/textView33"
+            app:layout_constraintTop_toBottomOf="@+id/view6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="244dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:text="Дата последнего обновления :"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="24dp"
+            android:text="20.11.2024"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView35"
+            app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="Разработчик : "
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:text="Брутфорс.inc"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textView38"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="103dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#7C7575"
+            android:text="Проверить обновления"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="#908A8A"
+            app:strokeColor="#B4ACAC" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
