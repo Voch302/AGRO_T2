@@ -1,16 +1,24 @@
 {
   "users": [
     {
+      "login": "dri",
+      "password": "dri",
+      "role": "driver"
+    },
+    {
+      "login": "con",
+      "password": "con",
+      "role": "controller"
+    },
+    {
       "login": "user1",
-      "password": "password1"
+      "password": "password1",
+      "role": "driver"
     },
     {
       "login": "user2",
-      "password": "password2"
-    },
-    {
-      "login": "user3",
-      "password": "password3"
+      "password": "password2",
+      "role": "controller"
     }
   ]
 }
