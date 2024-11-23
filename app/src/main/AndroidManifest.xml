@@ -89,6 +89,12 @@
             android:name=".ReportController"
             android:exported="true" />
         <activity
+            android:name=".OPENOrderDriverController"
+            android:exported="true" />
+        <activity
+            android:name=".OPENStatisticsDriverController"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity

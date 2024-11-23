@@ -16,11 +16,11 @@ class SettingsController : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        val notifButton: Button = findViewById(R.id.button15)
-        val changeProfileButton: Button = findViewById(R.id.button16)
-        val changePassButton: Button = findViewById(R.id.button17)
-        val aboutButton: Button =findViewById(R.id.button18)
-        val buttonExit: Button = findViewById(R.id.button19)
+        val notifButton: Button = findViewById(R.id.button_notification)
+        val changeProfileButton: Button = findViewById(R.id.button_edit_profile)
+        val changePassButton: Button = findViewById(R.id.button_change_password)
+        val aboutButton: Button =findViewById(R.id.button_about)
+        val buttonExit: Button = findViewById(R.id.button_logout)
 
 
 
