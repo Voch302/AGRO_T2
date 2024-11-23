@@ -32,6 +32,9 @@
             android:name=".MainPage"
             android:exported="false" />
         <activity
+            android:name=".resetPassword"
+            android:exported="false" />
+        <activity
             android:name=".notification_controller"
             android:exported="false" />
         <activity
