@@ -14,74 +14,108 @@
         android:layout_height="match_parent">
 
         <View
-            android:id="@+id/view15"
-            android:layout_width="442dp"
-            android:layout_height="76dp"
+            android:id="@+id/view7pas"
+            android:layout_width="423dp"
+            android:layout_height="130dp"
             android:background="#BF2221"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView76"
+            android:id="@+id/textView143pas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="120dp"
-            android:text="Настройки"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="108dp"
+            android:text="Настройки "
             android:textColor="#FFFFFF"
             android:textSize="34sp"
-            app:layout_constraintEnd_toEndOf="@+id/view15"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="@+id/view7pas"
+            app:layout_constraintStart_toEndOf="@+id/imageView25pas"
+            app:layout_constraintTop_toTopOf="@+id/view7pas" />
+
+
+        <ImageView
+            android:id="@+id/imageView25pas"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView143pas"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_agro_ava" />
 
         <Button
-            android:id="@+id/button15"
-            android:layout_width="210dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="70dp"
+            android:id="@+id/button_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#C4C4C4"
             android:text="Уведомление"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view15" />
+            app:layout_constraintTop_toBottomOf="@+id/view7pas" />
 
         <Button
-            android:id="@+id/button16"
-            android:layout_width="210dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="16dp"
-            android:text="Изменить Профиль"
+            android:id="@+id/button_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#C4C4C4"
+            android:text="Редактировать Профиль"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button15" />
+            app:layout_constraintTop_toBottomOf="@id/button_notification" />
 
         <Button
-            android:id="@+id/button17"
-            android:layout_width="210dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="16dp"
+            android:id="@+id/button_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#C4C4C4"
             android:text="Изменить Пароль"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+            app:layout_constraintTop_toBottomOf="@id/button_edit_profile" />
+
 
         <Button
-            android:id="@+id/button18"
-            android:layout_width="210dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="16dp"
-            android:text="О Приложении"
+            android:id="@+id/button_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#C4C4C4"
+            android:text="О приложении"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+            app:layout_constraintTop_toBottomOf="@id/button_change_password" />
+
 
         <Button
-            android:id="@+id/button19"
-            android:layout_width="210dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginBottom="120dp"
-            android:text="Выйти из учётной записи"
+            android:id="@+id/button_logout"
+            android:layout_marginBottom="68dp"
+            android:backgroundTint="#C4C4C4"
+            android:text="Выход с Аккаунта"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

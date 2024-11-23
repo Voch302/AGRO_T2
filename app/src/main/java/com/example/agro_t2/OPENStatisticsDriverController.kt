@@ -1,22 +1,21 @@
 package com.example.agro_t2
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import android.content.Intent
-import android.widget.TextView
-
-import com.example.agro_t2.databinding.ActivityStatisticsControllerBinding
+import com.example.agro_t2.databinding.ActivityOpenStatisticsDriverControllerBinding
 
 
-class statistics_controller : AppCompatActivity() {
-    lateinit var binding: ActivityStatisticsControllerBinding
+class OPENStatisticsDriverController : AppCompatActivity() {
+    lateinit var binding: ActivityOpenStatisticsDriverControllerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityStatisticsControllerBinding.inflate(layoutInflater)
+        binding = ActivityOpenStatisticsDriverControllerBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
+
 
         binding.nav.setNavigationItemSelectedListener {
             when (it.itemId) {
@@ -57,6 +56,7 @@ class statistics_controller : AppCompatActivity() {
             }
             true
         }
+
 
 
 
