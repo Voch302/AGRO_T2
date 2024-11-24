@@ -28,6 +28,13 @@ class Registration : AppCompatActivity(){
         //var UserClass = User((phoneNumberAfterRegistration).toString(),(emailAfterRegistration).toString(),(passAfterRegistration).toString(),(bornDayAfterRegistration).toString(),  )
         val textToAuth: TextView = findViewById(R.id.TextToAuth_Registration)
 
+        
+
+
+
+
+
+
 
         textToAuth.setOnClickListener{
             val intent = Intent(this, AuthActivity::class.java)
