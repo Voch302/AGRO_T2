@@ -54,40 +54,17 @@
         <TextView
             android:id="@+id/textView42"
             android:layout_width="105dp"
-            android:layout_height="36dp"
+            android:layout_height="23dp"
             android:layout_marginStart="4dp"
             android:layout_marginTop="60dp"
-            android:text="Иванов И.И. \nОценка 8.01"
+            android:text="Иванов И.И."
             app:layout_constraintStart_toEndOf="@+id/imageView27"
             app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 
-        <TextView
-            android:id="@+id/textView43"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="Статус: "
-            app:layout_constraintEnd_toStartOf="@+id/button16"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-        <Button
-            android:id="@+id/button16"
-            android:layout_width="101dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="#1FEB03"
-            android:text="Выполняет"
-            android:textSize="9dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            tools:ignore="TextSizeCheck" />
-
         <TableLayout
             android:id="@+id/tableLayout"
-            android:layout_width="409dp"
-            android:layout_height="74dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginTop="1dp"
             android:layout_marginEnd="1dp"
@@ -121,7 +98,7 @@
 
                 <TextView
                     android:id="@+id/textView58"
-                    android:layout_width="93dp"
+                    android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:background="#F0AEAE"
                     android:gravity="center"
@@ -134,7 +111,7 @@
 
                 <TextView
                     android:id="@+id/textView48"
-                    android:layout_width="wrap_content"
+                    android:layout_width="83dp"
                     android:layout_height="wrap_content"
                     android:text="Адрес" />
 
@@ -148,7 +125,7 @@
                 <TextView
                     android:id="@+id/textView56"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="#F0AEAE"
                     android:text="Прибытие" />
 
@@ -160,11 +137,6 @@
                     android:gravity="center"
                     android:text="19:00" />
 
-                <TextView
-                    android:id="@+id/textView150"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
             </TableRow>
 
             <TableRow
@@ -183,6 +155,21 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="23F" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F0AEAE"
+                    android:text="Масса" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F0AEAE"
+                    android:gravity="center"
+                    android:text="TextView" />
             </TableRow>
 
             <TableRow
@@ -205,9 +192,9 @@
         </TableLayout>
 
         <LinearLayout
-            android:layout_width="410dp"
-            android:layout_height="514dp"
-            android:layout_marginTop="31dp"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:layout_marginTop="32dp"
             android:background="#FFFFFF"
             android:backgroundTint="#FFFFFF"
             android:orientation="vertical"
@@ -393,43 +380,18 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Погрешность"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#68E035"
-                        android:backgroundTint="#ACEF3D"
-                        android:gravity="center"
-                        android:text="2%"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#F8DE11"
-                        android:gravity="center"
-                        android:text="7%"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#E78A54"
-                        android:gravity="center"
-                        android:text="-9%"
-                        android:textSize="15sp" />
-                </TableRow>
+                    android:layout_height="match_parent" />
             </TableLayout>
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оценка 8.1"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="83dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -439,6 +401,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/header"
-        app:menu="@menu/nav_menu" />
+        app:menu="@menu/nav_menu_controller" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

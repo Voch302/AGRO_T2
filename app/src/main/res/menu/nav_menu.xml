@@ -27,7 +27,7 @@
             <item
                 android:id="@+id/controllerNavMenu"
                 android:icon="@mipmap/ic_chat"
-                android:title="Связь с водителем" />
+                android:title="Связь с контролером" />
         </menu>
     </item>
 </menu>

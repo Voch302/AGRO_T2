@@ -32,28 +32,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@mipmap/ic_agro_ava" />
 
-        <ImageView
-            android:id="@+id/imageView26"
-            android:layout_width="98dp"
-            android:layout_height="98dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginBottom="40dp"
-            app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.871"
-            tools:srcCompat="@tools:sample/avatars" />
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditText"
             android:layout_width="360dp"
             android:layout_height="66dp"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginBottom="16dp"
             android:hint="О себе"
             app:layout_constraintBottom_toTopOf="@+id/textInputEditText2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.textfield.TextInputEditText
@@ -128,18 +117,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-
-
-
-
-
-
-
-
-
-
-
-
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="@+id/view6"
+            app:layout_constraintTop_toTopOf="@+id/view6"
+            app:srcCompat="@mipmap/icon_user" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

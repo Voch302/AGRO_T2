@@ -84,7 +84,7 @@ class AuthActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             "controller" -> {
-                val intent = Intent(this, statistics_controller::class.java)
+                val intent = Intent(this, DriverOrderListController::class.java)
                 startActivity(intent)
             }
             else -> Toast.makeText(this, "Неизвестная роль", Toast.LENGTH_LONG).show()

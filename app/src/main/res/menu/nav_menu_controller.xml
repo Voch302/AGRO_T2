@@ -17,14 +17,6 @@
                 android:icon="@mipmap/ic_rang"
                 android:title="Рейтинг водителей" />
             <item
-                android:id="@+id/StatisticsNavMenuController"
-                android:icon="@mipmap/icon_statistiks24_foreground"
-                android:title="Статистика" />
-            <item
-                android:id="@+id/reportNavMenuController"
-                android:icon="@mipmap/icon_report13_foreground"
-                android:title="Отчет" />
-            <item
                 android:id="@+id/settingsNavMenuController"
                 android:icon="@mipmap/ic_srtings_s"
                 android:title="Настройки" />

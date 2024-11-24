@@ -45,20 +45,6 @@
             </LinearLayout>
 
             <!-- Поле сортировки -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:orientation="horizontal"
-                android:padding="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Сортировка по ..."
-                    android:textColor="@android:color/darker_gray"
-                    android:textSize="16sp" />
-            </LinearLayout>
 
             <!-- Список заказов -->
             <ScrollView
@@ -75,6 +61,7 @@
                     <!-- Карточка заказа -->
 
                     <LinearLayout
+                        android:id="@+id/Order1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="8dp"
@@ -110,6 +97,182 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/progress1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ожидание"
+                                    android:textColor="#FFF419"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/id123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00064"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:id="@+id/textView40n"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Иванов И.И." />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:id="@+id/textView44n"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Адрес:" />
+
+                                <TextView
+                                    android:id="@+id/textView45n"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ул. Магистральная, д.3" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:id="@+id/textView46n"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Площадка:" />
+
+                                <TextView
+                                    android:id="@+id/textView60n"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="6" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:id="@+id/textView61n"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Масса" />
+
+                                <TextView
+                                    android:id="@+id/textView62n"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="9.1т" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:id="@+id/textView76j"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время загрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView117f"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12.30" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:id="@+id/textView126tr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время выгрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView127d"
+                                    android:layout_width="54dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="16.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Order2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/card_background"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:contentDescription="LOGO"
+                                android:src="@drawable/image34543" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Статус: "
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/progress2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Выполняется"
@@ -118,74 +281,7 @@
                             </LinearLayout>
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="ID: 00064"
-                                android:textColor="@android:color/black"
-                                android:textSize="14sp" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Иванов И. И.\nАдрес: Магистральная 2А\nПлощадка: 2"
-                            android:textColor="@android:color/black"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Вывоз: 9 т; 11 кг\nВыгруз: 12:00"
-                            android:textColor="@android:color/darker_gray"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="8dp"
-                        android:background="@drawable/card_background"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:contentDescription="LOGO"
-                                android:src="@drawable/image34543" />
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Статус: "
-                                    android:textColor="@android:color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Ожидание"
-                                    android:textColor="#FBDE21"
-                                    android:textSize="14sp" />
-                            </LinearLayout>
-
-                            <TextView
+                                android:id="@+id/id2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ID: 00078"
@@ -193,24 +289,129 @@
                                 android:textSize="14sp" />
                         </LinearLayout>
 
-                        <TextView
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Иванов И. И.\nАдрес: Калющино 5А\nПлощадка: 2"
-                            android:textColor="@android:color/black"
-                            android:textSize="14sp" />
+                            android:layout_height="match_parent">
 
-                        <TextView
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Иванов И.И." />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView44f"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Адрес:" />
+
+                                <TextView
+                                    android:id="@+id/textView45f"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ул. Степная, д.4" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView46j"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Площадка:" />
+
+                                <TextView
+                                    android:id="@+id/textView60j"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="1" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Вывоз: 10 т; 100 кг\nВыгруз: 15:30"
-                            android:textColor="@android:color/darker_gray"
-                            android:textSize="12sp" />
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView61aa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Масса" />
+
+                                <TextView
+                                    android:id="@+id/textView62d"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="6.2т" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView76w"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время загрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView117ff1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12.30" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView126c"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время выгрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView127z"
+                                    android:layout_width="54dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="16.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/Order3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="8dp"
@@ -246,14 +447,16 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/progress3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Ожидание"
-                                    android:textColor="#FBDE21"
+                                    android:text="Задержка"
+                                    android:textColor="#FB2121"
                                     android:textSize="14sp" />
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/id3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ID: 00032"
@@ -261,24 +464,129 @@
                                 android:textSize="14sp" />
                         </LinearLayout>
 
-                        <TextView
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Иванов И. И.\nАдрес: Магистральная 6\nПлощадка: 2"
-                            android:textColor="@android:color/black"
-                            android:textSize="14sp" />
+                            android:layout_height="match_parent">
 
-                        <TextView
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView40c"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Иванов И.И." />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView44x"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Адрес:" />
+
+                                <TextView
+                                    android:id="@+id/textView45v"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ул. Магистральная, д.6" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView46b"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Площадка:" />
+
+                                <TextView
+                                    android:id="@+id/textView60a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="2" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Вывоз: 7 т; 130 кг\nВыгруз: 13:20"
-                            android:textColor="@android:color/darker_gray"
-                            android:textSize="12sp" />
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView61s"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Масса" />
+
+                                <TextView
+                                    android:id="@+id/textView62dqwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="13.8т" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView76s"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время загрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView117a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12.30" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView126a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время выгрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView127qw"
+                                    android:layout_width="54dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="16.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/Order4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="8dp"
@@ -314,6 +622,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/progress4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Выполняется"
@@ -322,6 +631,7 @@
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/id4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ID: 00029"
@@ -329,24 +639,129 @@
                                 android:textSize="14sp" />
                         </LinearLayout>
 
-                        <TextView
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Иванов И. И.\nАдрес: Магистральная 5А\nПлощадка: 2"
-                            android:textColor="@android:color/black"
-                            android:textSize="14sp" />
+                            android:layout_height="match_parent">
 
-                        <TextView
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView40ss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Иванов И.И." />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView44ss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Адрес:" />
+
+                                <TextView
+                                    android:id="@+id/textView45ass"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ул. Шаландина, д.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView46ss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Площадка:" />
+
+                                <TextView
+                                    android:id="@+id/textView60ss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="4" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Вывоз: 17 т; 70 кг\nВыгрузка: 17:30"
-                            android:textColor="@android:color/darker_gray"
-                            android:textSize="12sp" />
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView61ddd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Масса" />
+
+                                <TextView
+                                    android:id="@+id/textView62aas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="10.1т" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView76zx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время загрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView117qwd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12.30" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView126zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время выгрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView127zxc"
+                                    android:layout_width="54dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="16.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/Order5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="8dp"
@@ -382,6 +797,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/progress5"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Выполняется"
@@ -390,6 +806,7 @@
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/id5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ID: 00034"
@@ -397,24 +814,129 @@
                                 android:textSize="14sp" />
                         </LinearLayout>
 
-                        <TextView
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Иванов И. И.\nАдрес: Шаландино\nПлощадка: 2"
-                            android:textColor="@android:color/black"
-                            android:textSize="14sp" />
+                            android:layout_height="match_parent">
 
-                        <TextView
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView40zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Иванов И.И." />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView44zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Адрес:" />
+
+                                <TextView
+                                    android:id="@+id/textView45zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ул. Магистральная, д.8" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView46zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Площадка:" />
+
+                                <TextView
+                                    android:id="@+id/textView60zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="4" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Вывоз: 13 т; 437 кг\nВыгруз: 15:20"
-                            android:textColor="@android:color/darker_gray"
-                            android:textSize="12sp" />
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView61zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Масса" />
+
+                                <TextView
+                                    android:id="@+id/textView62zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="17.2т" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView76zxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время загрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView117zxcc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12.30" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView126zxcc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время выгрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView127zxcc"
+                                    android:layout_width="54dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="16.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/Order6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="8dp"
@@ -450,6 +972,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/progress6"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Выполняется"
@@ -458,6 +981,7 @@
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/id6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ID: 00012"
@@ -465,24 +989,129 @@
                                 android:textSize="14sp" />
                         </LinearLayout>
 
-                        <TextView
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Иванов И. И.\nАдрес: Калющино 1\nПлощадка: 2"
-                            android:textColor="@android:color/black"
-                            android:textSize="14sp" />
+                            android:layout_height="match_parent">
 
-                        <TextView
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView40333"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Иванов И.И." />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView44qwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Адрес:" />
+
+                                <TextView
+                                    android:id="@+id/textView45qwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ул. Молодежная, д.12" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView46qwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Площадка:" />
+
+                                <TextView
+                                    android:id="@+id/textView60qwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="4Б" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Вывоз: 15 т; 895 кг\nВыгруз: 7:50"
-                            android:textColor="@android:color/darker_gray"
-                            android:textSize="12sp" />
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView61"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Масса" />
+
+                                <TextView
+                                    android:id="@+id/textView62qwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="10.5т" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView76qwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время загрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView117qwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12.30" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView126qwe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время выгрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView127qwe"
+                                    android:layout_width="54dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="16.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/Order7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
@@ -526,6 +1155,7 @@
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/id7"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ID: 00042"
@@ -533,21 +1163,125 @@
                                 android:textSize="14sp" />
                         </LinearLayout>
 
-                        <TextView
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Иванов И. И.\nАдрес: Магистарльная 2\nПлощадка: 2"
-                            android:textColor="@android:color/black"
-                            android:textSize="14sp" />
+                            android:layout_height="match_parent">
 
-                        <TextView
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView40qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Иванов И.И." />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView44qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Адрес:" />
+
+                                <TextView
+                                    android:id="@+id/textView45qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ул. Магистральная, д.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView46qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Площадка:" />
+
+                                <TextView
+                                    android:id="@+id/textView60qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="2А" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Вывоз: 13 т; 350 кг\nВыгруз: 14:20"
-                            android:textColor="@android:color/darker_gray"
-                            android:textSize="12sp" />
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView61qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Масса" />
+
+                                <TextView
+                                    android:id="@+id/textView62qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12.2т" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView76qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время загрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView117qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12.30" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView126qwer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Время выгрузки" />
+
+                                <TextView
+                                    android:id="@+id/textView127qwer"
+                                    android:layout_width="54dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="16.20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
                     </LinearLayout>
 
                     <!-- Повторите карточки для других заказов -->

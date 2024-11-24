@@ -37,24 +37,14 @@ class ReportController : AppCompatActivity() {
                     startActivity(intent)
                 }
             }
-            when (it.itemId) {
-                R.id.StatisticsNavMenuController -> {
-                    val intent = Intent(this, statistics_controller::class.java)
-                    startActivity(intent)
-                }
-            }
+
             when (it.itemId) {
                 R.id.settingsNavMenuController -> {
                     val intent = Intent(this, SettingsController::class.java)
                     startActivity(intent)
                 }
             }
-            when(it.itemId){
-                R.id.reportNavMenuController ->{
-                    val intent = Intent(this, ReportController::class.java)
-                    startActivity(intent)
-                }
-            }
+
             true
         }
 

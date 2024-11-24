@@ -14,16 +14,6 @@
         android:layout_height="match_parent">
 
         <View
-            android:id="@+id/view23"
-            android:layout_width="410dp"
-            android:layout_height="66dp"
-            android:layout_marginEnd="3dp"
-            android:background="#AAAAAA"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view13" />
-
-        <View
             android:id="@+id/view13"
             android:layout_width="415dp"
             android:layout_height="81dp"
@@ -43,68 +33,68 @@
             app:layout_constraintEnd_toEndOf="@+id/view13"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextText2"
-            android:layout_width="340dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
-            android:ems="10"
-            android:text="Введите поиск по..."
-            android:textColor="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view13" />
-
         <TextView
             android:id="@+id/textView66"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="16dp"
             android:text="Категории Отчётов"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+            app:layout_constraintTop_toBottomOf="@+id/view13" />
 
         <Button
             android:id="@+id/button11"
             android:layout_width="280dp"
             android:layout_height="100dp"
+            android:layout_marginTop="53dp"
             android:layout_marginEnd="64dp"
-            android:layout_marginBottom="4dp"
+            android:backgroundTint="#C4C4C4"
             android:text="Водитель   ФИО   Качество   Заказы   Рейтинг   Выгрузка"
-            app:layout_constraintBottom_toTopOf="@+id/button10"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:textColor="#000000"
+            android:textColorLink="#BF2221"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView66" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="280dp"
             android:layout_height="100dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="64dp"
-            android:layout_marginBottom="12dp"
+            android:backgroundTint="#C4C4C4"
             android:text="Бункеры   ID:Бункеров   Адресс   Заполненость"
-            app:layout_constraintBottom_toTopOf="@+id/button12"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:textColor="#000000"
+            android:textColorLink="#BF2221"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button10" />
 
         <Button
             android:id="@+id/button12"
             android:layout_width="280dp"
             android:layout_height="100dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="64dp"
-            android:layout_marginBottom="44dp"
-            android:text="За Время   Сколько Закаов   Сколько за этот периуд"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:backgroundTint="#C4C4C4"
+            android:text="За Время Сколько Заказов Сколько за этот периуд"
+            android:textColor="#000000"
+            android:textColorLink="#BF2221"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="280dp"
             android:layout_height="100dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="64dp"
-            android:layout_marginBottom="4dp"
+            android:backgroundTint="#C4C4C4"
             android:text="Заказы   ID:Заказов   Качество   Сорт   Количество"
-            app:layout_constraintBottom_toTopOf="@+id/button9"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:textColor="#000000"
+            android:textColorLink="#BF2221"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button11" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
