@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "userName": "Петренко М.В.",
+    "userQuality": 7.89,
+    "orderStatus": "Выполняется",
+    "address": "ул.Колина 34 Блок А",
+    "sector": "Сектор 2",
+    "dispatchTime": "14:00",
+    "unloadingTime": "19:00",
+    "items": [
+      {
+        "weight": "100 кг",
+        "sort": "Обычный",
+        "storage": "13",
+        "name": "11"
+      },
+      {
+        "weight": "152 кг",
+        "sort": "Обычный",
+        "storage": "14",
+        "name": "11"
+      }
+    ]
+  }
+]
